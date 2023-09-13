@@ -21,27 +21,33 @@ itemsCollection[counterImg].classList.remove("hide");
 btnUp.addEventListener("click", function(){
   itemsCollection[counterImg].classList.add("hide");
 
-  counterImg ++;
+  counterImg++;
 
   itemsCollection[counterImg].classList.remove("hide");
 
   btnDown.classList.remove("hide"); 
+  
+  if (counterImg === (itemsCollection.length - 1)){
+  btnUp.classList.add("hide");
+  }
 }) 
 
 btnDown.addEventListener("click", function(){
   itemsCollection[counterImg].classList.add("hide");
 
-  counterImg --;
+  counterImg--;
 
   itemsCollection[counterImg].classList.remove("hide");
+
+  btnUp.classList.remove("hide");
+
+  if(counterImg === 0){
+    btnDown.classList.add("hide");
+  }
 }) 
 
-if (counterImg === (itemsCollection.length - 1)){
-  btnUp.classList.add("hide");
-}
 
-if(counterImg === 0){
-  btnDown.classList.add("hide");
-}
+
+
 
 
