@@ -1,0 +1,33 @@
+.main-wrapper{
+  background-color: rgb(154, 154, 247);
+}
+
+.container{
+  border: 1px solid red;
+  height: 60%;
+}
+
+.btn-up, .btn-down{
+  background-color: rgba(128, 128, 128, 0.451);
+  padding: 15px 20px;
+  border-radius: 50%;
+}
+
+.btn-up{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-down{
+  left: 50%;
+  transform: translateX(-55%);
+  bottom: 0;
+}
+
+.hide{
+  display: none;
+}
+
+.items-wrapper img{
+  height: 100%;
+}
